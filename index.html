@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>country quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/ico" href="assets/favicon.ico" />
+  </head>
+
+  <body>
+    <div id="title__wrapper">
+      <h1 id="title__text">Country Quiz</h1>
+      <h3 id="title__points">
+        🏆 <span id="points-display">0</span>/10 Points
+      </h3>
+    </div>
+    <div id="content">
+      <div id="number__wrapper"></div>
+      <h3 id="question">
+        Which country does this flag <span id="flag"></span> belong to?
+      </h3>
+      <div id="answer__wrapper"></div>
+    </div>
+
+    <template id="number__template">
+      <h3 class="number__item--inactive"></h3>
+    </template>
+
+    <template id="answer__template">
+      <h3 class="answer__item--inactive">ans 1</h3>
+    </template>
+
+    <script src="main.js"></script>
+  </body>
+</html>
